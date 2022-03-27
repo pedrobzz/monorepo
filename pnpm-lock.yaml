@@ -54,7 +54,6 @@ importers:
       cors: ^2.8.5
       eslint: ^8.11.0
       eslint-config-prettier: ^8.5.0
-      eslint-config-standard: ^16.0.3
       eslint-plugin-import: ^2.25.4
       eslint-plugin-node: ^11.1.0
       eslint-plugin-prettier: ^4.0.0
@@ -82,7 +81,6 @@ importers:
       '@typescript-eslint/parser': 5.16.0_eslint@8.12.0+typescript@4.6.3
       eslint: 8.12.0
       eslint-config-prettier: 8.5.0_eslint@8.12.0
-      eslint-config-standard: 16.0.3_146d38e67599a909c4e567a04144449b
       eslint-plugin-import: 2.25.4_eslint@8.12.0
       eslint-plugin-node: 11.1.0_eslint@8.12.0
       eslint-plugin-prettier: 4.0.0_b253a92c95b42c3296c682f11cccb3bd

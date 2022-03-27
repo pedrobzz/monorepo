@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: monorepo-db
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+  api:
+    build: ./apps/api
+    image: 'api-example'
+    ports:
+      - '3001:3001'
+    volumes:
+      - './apps/api:/usr/apps/api'
+      - '/usr/apps/api/node_modules'

@@ -8,9 +8,10 @@ NextJS e o Back-End utilizando ExpressJS (Ambos TypeScript).
 
 ### Objetivos
 - [x] Multiplos workspaces;
-- [x] Eslint e tsconfig compartilhados;
+- [ ] Eslint e tsconfig compartilhados;
 - [x] Execução simultânea;
-- [ ] Docker;
+- [x] Docker;
+- [ ] Se Conectar com a Database
 - [x] Deploy na Vercel;
 
 ### Como Executar
