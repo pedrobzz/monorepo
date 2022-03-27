@@ -6,6 +6,13 @@ NextJS e o Back-End utilizando ExpressJS (Ambos TypeScript).
 ### Dependências
 - pnpm;
 
+### Objetivos
+- [x] Multiplos workspaces;
+- [x] Eslint e tsconfig compartilhados;
+- [x] Execução simultânea;
+- [ ] Docker;
+- [ ] Deploy na Vercel;
+
 ### Como Executar
 O pnpm permite executar um ou mais aplicativos ao mesmo tempo. Para iniciar o ambiente de desenvolvimento, utilize:
 ```BASH
