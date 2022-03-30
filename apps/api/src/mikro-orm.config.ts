@@ -9,6 +9,8 @@ const mikroOrmConfig = {
   debug: !__prod__,
   user: "postgres",
   password: "postgres",
+  host: __prod__ ? "monorepo-db-1" : "localhost",
+  port: __prod__ ? 5432 : 5000,
   entities: [Post],
   allowGlobalContext: true,
 
