@@ -9,12 +9,27 @@ services:
     volumes:
       - ./pgdata:/var/lib/postgresql/data
     ports:
-      - '5432:5432'
+      - '5000:5432'
   api:
     build: ./apps/api
     image: 'api-example'
+    depends_on:
+      - db
     ports:
-      - '3001:3001'
+      - '4000:4000'
     volumes:
       - './apps/api:/usr/apps/api'
       - '/usr/apps/api/node_modules'
+    environment:
+      - NODE_ENV=production
+  web:
+    build: ./apps/web
+    depends_on:
+      - api
+    image: 'web-example'
+    ports:
+      - '3000:3000'
+    volumes:
+      - './apps/web:/usr/apps/web'
+      - '/usr/apps/web/node_modules'
+      - '/usr/apps/web/.next'
