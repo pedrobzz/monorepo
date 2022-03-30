@@ -3,22 +3,37 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "codegen": "graphql-codegen"
   },
   "dependencies": {
+    "@apollo/client": "latest",
     "@mantine/core": "^4.0.9",
     "@mantine/form": "^4.0.9",
     "@mantine/hooks": "^4.0.9",
     "@mantine/next": "^4.0.9",
     "axios": "^0.26.1",
+    "graphql": "15.3.0",
+    "graphql-tag": "^2.12.6",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
     "react-query": "^3.34.19",
-    "styled-components": "^5.2.3"
+    "styled-components": "^5.2.3",
+    "tabler-icons-react": "^1.42.0"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "2.6.2",
+    "@graphql-codegen/fragment-matcher": "3.2.1",
+    "@graphql-codegen/introspection": "2.1.1",
+    "@graphql-codegen/typescript": "2.4.8",
+    "@graphql-codegen/typescript-document-nodes": "2.2.8",
+    "@graphql-codegen/typescript-graphql-files-modules": "2.1.1",
+    "@graphql-codegen/typescript-operations": "2.3.5",
+    "@graphql-codegen/typescript-react-apollo": "3.2.11",
+    "@graphql-codegen/typescript-react-query": "^3.5.9",
+    "@graphql-codegen/urql-introspection": "2.1.1",
     "@types/node": "15.0.0",
     "@types/react": "17.0.4",
     "@types/react-dom": "17.0.3",
